@@ -1,4 +1,14 @@
+[core]
+    remote = yandex_remote
 ['remote "myremote"']
     url = gdrive://1jTd5rNj1tc3NbgD3e4WKkisfaxD0cZ_i
 ['remote "data_remote"']
     url = gdrive://18TnrtkL7FI0y6DHRiaQrr06W2t7nrHro
+    gdrive_acknowledge_abuse = true
+['remote "yandex_remote"']
+    url = s3://mlops1
+    endpointurl = https://storage.yandexcloud.net
+    access_key_id = YCAJEXYuBivWFlg35KTopXD_I
+    secret_access_key = YCMKJQkS2jXKTH0lyLQCbo9wg5ZL9tGCiQXOsU11
+['remote "data_remote2"']
+    url = gdrive://root/mlops
