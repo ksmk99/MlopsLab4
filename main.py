@@ -1,6 +1,7 @@
 import dvc.api
 import pandas as pd
 
-data_path = dvc.api.get_url('Data_sets/dataset1.csv', remote="data_remote2")
+data_path = dvc.api.get_url('Data_sets/dataset2.csv', remote="data_remote2")
 df = pd.read_csv(data_path.replace("root/", ""))
-print(df)
+print(df.isna().sum())
+##дата сет без Nan
